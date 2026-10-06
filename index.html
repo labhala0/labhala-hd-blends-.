@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Labhala Wigs | Look Good • Feel Good • Be You</title>
+<meta name="description" content="Labhala Wigs — stylish wigs and hair. Shop our collection and order today.">
+<style>
+:root {
+  --black:#111111;
+  --gold:#b08a3c;
+  --cream:#faf8f3;
+  --white:#ffffff;
+  --muted:#6f6a63;
+  --line:#e9e5dc;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--black);
+  background:var(--white); line-height:1.5;
+}
+a { color:inherit; text-decoration:none; }
+.nav {
+  position:sticky; top:0; z-index:20; background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px); border-bottom:1px solid var(--line);
+}
+.nav-inner { max-width:1180px; margin:auto; padding:16px 22px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.logo { font-family:Georgia, serif; font-size:24px; letter-spacing:2px; font-weight:700; }
+.logo span { color:var(--gold); }
+.nav-links { display:flex; gap:22px; font-size:14px; }
+.hero {
+  background:linear-gradient(135deg,#fff 0%,#faf8f3 100%);
+  padding:80px 22px 70px; text-align:center;
+}
+.eyebrow { text-transform:uppercase; letter-spacing:4px; color:var(--gold); font-size:12px; font-weight:700; }
+.hero h1 { font-family:Georgia,serif; font-size:clamp(44px,8vw,78px); margin:12px 0 10px; line-height:1; }
+.hero p { max-width:620px; margin:0 auto 28px; color:var(--muted); font-size:17px; }
+.btn {
+  display:inline-block; padding:14px 25px; border-radius:999px; font-weight:700;
+  background:var(--black); color:white; margin:5px;
+}
+.btn.gold { background:var(--gold); }
+.section { max-width:1180px; margin:auto; padding:70px 22px; }
+.section-title { text-align:center; margin-bottom:35px; }
+.section-title h2 { font-family:Georgia,serif; font-size:40px; margin:0 0 8px; }
+.section-title p { color:var(--muted); margin:0; }
+.products { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.product-card {
+  border:1px solid var(--line); border-radius:18px; overflow:hidden; background:white;
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.product-card:hover { transform:translateY(-4px); box-shadow:0 12px 35px rgba(0,0,0,.08); }
+.product-image-wrap { height:370px; background:#fff; display:flex; align-items:center; justify-content:center; padding:10px; }
+.product-image-wrap img { width:100%; height:100%; object-fit:contain; }
+.product-info { padding:17px; }
+.product-info h3 { font-family:Georgia,serif; font-size:18px; margin:0 0 5px; }
+.price { font-weight:800; font-size:17px; margin:0 0 13px; }
+.order-btn { display:block; text-align:center; border:1px solid var(--black); padding:10px; border-radius:999px; font-weight:700; }
+.about { background:var(--cream); }
+.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+.about-box { background:white; padding:35px; border-radius:20px; border:1px solid var(--line); }
+.about-box h3 { font-family:Georgia,serif; font-size:30px; margin-top:0; }
+.features { display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin-top:25px; }
+.feature { padding:18px; border:1px solid var(--line); border-radius:14px; background:white; }
+.feature b { display:block; margin-bottom:5px; }
+.order { background:#111; color:#fff; }
+.order .section-title p { color:#c9c9c9; }
+.order-box { max-width:720px; margin:auto; background:#1b1b1b; border:1px solid #333; border-radius:20px; padding:30px; }
+.order-box label { display:block; font-size:13px; margin:12px 0 6px; }
+.order-box input, .order-box textarea {
+  width:100%; padding:13px; border-radius:10px; border:1px solid #444; background:#111; color:#fff;
+}
+.footer { padding:30px 22px; text-align:center; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+@media(max-width:950px) { .products {grid-template-columns:repeat(3,1fr)} }
+@media(max-width:700px) {
+  .nav-links {display:none}
+  .products {grid-template-columns:repeat(2,1fr)}
+  .product-image-wrap {height:300px}
+  .about-grid, .features {grid-template-columns:1fr}
+}
+@media(max-width:450px) {
+  .products {grid-template-columns:1fr}
+  .product-image-wrap {height:380px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#">LABHALA <span>WIGS</span></a>
+    <nav class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#order">Order</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Labhala Wigs</div>
+  <h1>Look good.<br>Feel good. Be you.</h1>
+  <p>Beautiful wigs made for every mood — from soft everyday styles to statement looks.</p>
+  <a class="btn" href="#shop">Shop the collection</a>
+  <a class="btn gold" href="#order">Place an order</a>
+</section>
+
+<section class="section" id="shop">
+  <div class="section-title">
+    <h2>Shop Wigs</h2>
+    <p>Find your next favourite look.</p>
+  </div>
+  <div class="products">
+    
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_product_advertisement_image_on_a_white_bac.png" alt="Black Glueless Bodywave Curls" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Black Glueless Bodywave Curls</h3>
+            <p class="price">R550</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/1001698595.jpg" alt="Honey Blonde" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Honey Blonde</h3>
+            <p class="price">R620</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_bright_studio_style_product_advertisemen.png" alt="Honey Swirl Bodywave Futura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Honey Swirl Bodywave Futura</h3>
+            <p class="price">R700</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_high_key_product_advertisement_image_on_a.png" alt="Foxy Bodywave Futura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Foxy Bodywave Futura</h3>
+            <p class="price">R720</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_minimal_product_ad_style_poster_on_a_brig.png" alt="Miss Icy" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Miss Icy</h3>
+            <p class="price">R600</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_product_promo_style_studio_image_on_a_pure.png" alt="Hennessy Futura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Hennessy Futura</h3>
+            <p class="price">R750</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_product_ad_style_studio_image_on_a_white_b.png" alt="Dirty Blonde Futura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Dirty Blonde Futura</h3>
+            <p class="price">R700</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_product_style_advertisement_image_on_a_whi.png" alt="Ms Foxxy Futura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Ms Foxxy Futura</h3>
+            <p class="price">R720</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_studio_style_product_advertisement_image.png" alt="Honey Swirl" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Honey Swirl</h3>
+            <p class="price">R600</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_high_key_product_showcase_image_on_a_whit.png" alt="90s Hollywood Bob" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>90s Hollywood Bob</h3>
+            <p class="price">R600</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/clean_product_ad_style_image_on_a_white_background.png" alt="Bombshell Futura Curls" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Bombshell Futura Curls</h3>
+            <p class="price">R680</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_product_advertisement_style_image_with_a_w.png" alt="Icy Waterwave" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Icy Waterwave</h3>
+            <p class="price">R600</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_product_promo_style_image_on_a_white_backg.png" alt="Chocolate Crimps Futura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Chocolate Crimps Futura</h3>
+            <p class="price">R720</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_product_advertisement_style_image_on_a_whi.png" alt="Candy Crimps Futura" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Candy Crimps Futura</h3>
+            <p class="price">R720</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="images/a_clean_white_background_product_style_poster_ima.png" alt="Viola" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h3>Viola</h3>
+            <p class="price">R620</p>
+            <a class="order-btn" href="#order">Order now</a>
+          </div>
+        </article>
+        
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section about-grid">
+    <div class="about-box">
+      <div class="eyebrow">About us</div>
+      <h3>Hair that lets you be you.</h3>
+      <p>Labhala Wigs brings you stylish, affordable wigs with a focus on beautiful colours, curls and everyday confidence.</p>
+      <p>We deliver nationwide in South Africa.</p>
+    </div>
+    <div>
+      <div class="features">
+        <div class="feature"><b>Nationwide delivery</b><span>Delivery available across South Africa.</span></div>
+        <div class="feature"><b>Easy ordering</b><span>Choose your style and send your order details.</span></div>
+        <div class="feature"><b>Fresh looks</b><span>Curly, straight, blonde, brown and statement styles.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section order" id="order">
+  <div class="section-title">
+    <h2>Place an order</h2>
+    <p>Fill this in, then send your details through your preferred contact method.</p>
+  </div>
+  <div class="order-box">
+    <form onsubmit="event.preventDefault(); alert('Thanks! Please connect this form to your WhatsApp number or email before publishing.');">
+      <label>Your name</label>
+      <input required placeholder="Your name">
+      <label>Wig you want</label>
+      <input required placeholder="e.g. Honey Swirl R600">
+      <label>City / delivery area</label>
+      <input required placeholder="e.g. Cape Town">
+      <label>Message</label>
+      <textarea rows="4" placeholder="Any questions or delivery details?"></textarea>
+      <button class="btn gold" type="submit" style="border:0;cursor:pointer;margin-top:16px;">Send order request</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 Labhala Wigs • Look good • Feel good • Be you.
+</footer>
+</body>
+</html>
